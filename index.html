@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oman Power</title>
+		<meta name="description" content="Oman" />
+		<style type="text/css">
+			.tg  {border-collapse:collapse;border-color:#9ABAD9;padding:20px;border-spacing:20px;margin-left:auto;margin-right:auto;}
+			.tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
+			  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 25px;word-break:normal;}
+			.tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#fff;
+			  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 25px;word-break:normal;}
+			.tg .tg-0pkz{border-color:inherit; font-family:Arial, sans-serif;font-size:18px;font-weight:bold; text-align:left;vertical-align:top}
+			.tg .tg-0pky{border-color:inherit; font-family:Arial, sans-serif;font-size:14px;font-weight:bold; text-align:left;vertical-align:top}
+			.tg .tg-0lax{background-color:#dae8fc;text-align:center;vertical-align:top;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;}
+			.tg .tg-x6qq{background-color:#dae8fc;border-color:inherit;text-align:left;vertical-align:top;font-size:14px;font-weight:bold;}
+			.tg .tg-x6qz{background-color:#dae8fc;border-color:inherit; font-family:Arial, sans-serif;font-size:18px;font-weight:bold;text-align:left;vertical-align:top}
+			.txt {color:#1e5794; font-family:Arial, sans-serif;font-size:14px;font-weight:bold;text-align: center;}
+			</style>
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "date",
+					"dataDateFormat": "YYYY",
+					"theme": "default",
+					"categoryAxis": {
+						"minPeriod": "YYYY",
+						"parseDates": true
+					},
+					"chartCursor": {
+						"enabled": true,
+						"animationDuration": 0,
+						"categoryBalloonDateFormat": "YYYY"
+					},
+					"chartScrollbar": {
+						"enabled": true
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"bullet": "round",
+							"id": "AmGraph-1",
+							"title": "Expected Case - Peak Demand",
+							"valueField": "TanweerExpectedCase"
+						},
+						{
+							"bullet": "square",
+							"id": "AmGraph-2",
+							"title": "Low Case - Peak Demand",
+							"valueField": "TanweerLowCase"
+						},
+						{
+							"bullet": "square",
+							"id": "AmGraph-3",
+							"title": "High Case - Peak Demand",
+							"valueField": "TanweerHighCase"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Consumption in MW"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Peak Demand - Musandam"
+						}
+					],
+					"dataProvider": [
+						{
+							"date": "2020",
+							"TanweerExpectedCase": 84,
+							"TanweerLowCase":82,
+							"TanweerHighCase": 85
+						},
+						{
+							"date": "2021",
+							"TanweerExpectedCase": 85,
+							"TanweerLowCase":84,
+							"TanweerHighCase": 87
+						},
+						{
+							"date": "2022",
+							"TanweerExpectedCase": 88,
+							"TanweerLowCase":84,
+							"TanweerHighCase": 91
+						},
+						{
+							"date": "2023",
+							"TanweerExpectedCase": 89,
+							"TanweerLowCase":86,
+							"TanweerHighCase": 93
+						},
+						{
+							"date": "2024",
+							"TanweerExpectedCase": 92,
+							"TanweerLowCase":87,
+							"TanweerHighCase": 97
+						},
+						{
+							"date": "2025",
+							"TanweerExpectedCase": 94,
+							"TanweerLowCase":89,
+							"TanweerHighCase": 99
+						},
+						{
+							"date": "2026",
+							"TanweerExpectedCase": 96,
+							"TanweerLowCase":89,
+							"TanweerHighCase": 103
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+<div class="txt">
+		Figure 15.  Future Power Generation Expansion Plans - Musandam Governorate
+	</div>
+<br>
+<br>
+		<table class="tg">
+			<thead>
+			  <tr>
+				<th class="tg-0pkz">Year - - ></th>
+				<th class="tg-0pkz">2020</th>
+				<th class="tg-0pkz">2021</th>
+				<th class="tg-0pkz">2022</th>
+				<th class="tg-0pkz">2023</th>
+				<th class="tg-0pkz">2024</th>
+				<th class="tg-0pkz">2025</th>
+				<th class="tg-0pkz">2026</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td class="tg-0lax" colspan=8>Peak Demand in MW</td>
+				
+			  </tr>
+			 
+			  <tr>
+				<td class="tg-0pkz">Tanweer Low Case</td>
+				<td class="tg-0pky">82</td>
+				<td class="tg-0pky">84</td>
+				<td class="tg-0pky">84</td>
+				<td class="tg-0pky">86</td>
+				<td class="tg-0pky">87</td>
+				<td class="tg-0pky">89</td>
+				<td class="tg-0pky">89</td>
+			  </tr>
+			  <tr>
+				<td class="tg-x6qz">Tanweer Expected Case</td>
+				<td class="tg-x6qq">84</td>
+				<td class="tg-x6qq">85</td>
+				<td class="tg-x6qq">88</td>
+				<td class="tg-x6qq">89</td>
+				<td class="tg-x6qq">92</td>
+				<td class="tg-x6qq">94</td>
+				<td class="tg-x6qq">96</td>
+			  </tr>
+			  <tr>
+				<td class="tg-0pkz">Tanweer High Case</td>
+				<td class="tg-0pky">85</td>
+				<td class="tg-0pky">87</td>
+				<td class="tg-0pky">91</td>
+				<td class="tg-0pky">93</td>
+				<td class="tg-0pky">97</td>
+				<td class="tg-0pky">99</td>
+				<td class="tg-0pky">103</td>
+			  </tr>
+			</tbody>
+			</table>
+		</br>
+	</br>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	
+
+
+	</body>
+</html>
